@@ -264,6 +264,8 @@
   } */
   .dot-menu {
     display: block;
+    /*display: none;
+    */
     width: 5px;
     height: 5px;
     background-color: var(--color-title);
@@ -272,6 +274,15 @@
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+  }
+
+  .menu__item.is-active .dot-menu {
+    display: inline-block;
   }
 }
 
@@ -304,6 +315,11 @@
 
 
 @media(hover:hover) {
+
+  .menu__item:hover .dot-menu {
+    background-color: var(--hover-color);
+  }
+
   .menu__item-link:hover {
     color: var(--hover-color);
   }
