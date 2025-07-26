@@ -1,0 +1,281 @@
+.interior {
+  margin-bottom: 120px;
+}
+
+
+
+
+
+
+
+/* .interior-slide {
+  max-height: 100%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  overflow: hidden;
+
+} */
+
+/* .interior-slide>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+
+
+/* .interior-swiper2-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.interior-content-mid {
+  margin-top: 25px;
+  padding-bottom: 100px;
+}
+
+/* Верхний слайдер  */
+.interior-swiper2 {
+  max-width: 370px;
+  max-height: 323px;
+}
+
+.interior-swiper2-slide {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+
+.interior-swiper2-slide>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* Нижинй слайдер */
+.interior-swiper-box {
+  position: relative;
+  margin-top: 10px;
+}
+
+.interior-swiper {
+  max-width: 280px;
+  max-height: 70px;
+}
+
+.interior-slide {
+  position: relative;
+  min-height: 70px;
+  /* width: 100%; */
+  /* max-width: 322px; */
+  /* max-height: 242px; */
+}
+
+.interior-slide>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.interior-swiper-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+
+.interior-swiper-prev {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+
+
+
+
+/* Адаптивность  */
+
+@media (min-width:700px) {
+
+  /* верхний   */
+  .interior-swiper2 {
+    max-width: 100%;
+    min-height: 450px;
+  }
+
+  .interior-swiper2-slide {
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    overflow: hidden;
+  }
+
+  .interior-swiper2-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+
+  /* нижинй */
+  .interior-swiper {
+    max-width: 580px;
+    max-height: 70px;
+  }
+
+  .interior-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+@media (min-width:1024px) {
+
+  /* верхний   */
+  .interior-swiper2 {
+    max-width: 100%;
+    min-height: 500px;
+  }
+
+  .interior-swiper2-slide {
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
+    overflow: hidden;
+  }
+
+  .interior-swiper2-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  .interior-swiper {
+    max-width: 900px;
+    min-height: 100px;
+  }
+
+  .interior-slide {
+    min-height: 100px;
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    overflow: hidden;
+  }
+
+  .interior-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+@media (min-width:1200px) {
+  .interior-content-mid {
+    margin-top: 45px;
+    padding-bottom: 100px;
+  }
+
+
+  /* верхний   */
+  .interior-swiper2 {
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+  .interior-swiper2-slide {
+    position: relative;
+    width: 100%;
+    padding-top: 0%;
+    overflow: hidden;
+  }
+
+  .interior-swiper2-slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+
+
+
+  /* Нижинй слайдер */
+  .interior-swiper-box {
+    margin-top: 20px;
+  }
+
+  .interior {
+    margin-bottom: 200px;
+  }
+
+  .interior-swiper {
+    max-width: 1318px;
+    max-height: 242px;
+  }
+
+  .interior-slide {
+    position: relative;
+    min-height: 242px;
+    width: 100%;
+    max-width: 322px;
+    max-height: 242px;
+  }
+}

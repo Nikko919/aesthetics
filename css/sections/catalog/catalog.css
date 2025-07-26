@@ -1,0 +1,132 @@
+.catalog-page {
+
+  margin-bottom: 120px;
+}
+
+.catalog-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.catalog-cards-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 10px;
+  max-width: 1200px;
+}
+
+/* пагинация */
+
+.pagination-container {
+  margin-top: 24px;
+}
+
+.paginationjs-pages>ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.paginationjs-page>a {
+  font-family: var(--GeisR);
+  font-size: 14px;
+}
+
+
+/* Неактивный номер страницы (серый цвет) */
+.paginationjs-page a {
+  color: #d4d4d4;
+  /* Серый цвет для текста */
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  transition: color 0.2s;
+  /* Плавный переход цвета */
+}
+
+/* Активный номер страницы (черный цвет) */
+.paginationjs-page.active a {
+  color: #343330;
+  /* Черный цвет (как в вашей теме) */
+  font-weight: 700;
+  /* Делаем жирным для выделения */
+  cursor: default;
+  /* Убираем возможность нажать на активную страницу */
+}
+
+/* При наведении на неактивный номер */
+.paginationjs-page:not(.active) a:hover {
+  color: #343330;
+  /* При наведении делаем черным */
+}
+
+.paginationjs-prev,
+.paginationjs-next {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width:700px) {
+  .catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 47px 25px;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width:1024px) {
+
+  .catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 47px 25px;
+    max-width: 1200px;
+  }
+}
+
+
+
+
+@media (min-width:1200px) {
+  .catalog-page {
+
+    margin-bottom: 200px;
+  }
+
+  .catalog-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+
+  .catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 47px 25px;
+    max-width: 1200px;
+  }
+
+  /* пагинация */
+  .pagination-container {
+    margin-top: 45px;
+  }
+
+  .paginationjs-page>a {
+    font-family: var(--GeisR);
+    font-size: 16px;
+  }
+
+}

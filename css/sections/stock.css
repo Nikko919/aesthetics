@@ -1,0 +1,213 @@
+.stock {
+  margin-bottom: 120px;
+}
+
+.stock-swiper-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.stock-slide {
+  /* max-width: 370px; */
+  max-width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 20px 0 20px 30px; */
+  padding: 20px 30px;
+}
+
+.stock-slide-one {
+  background:
+    linear-gradient(to bottom, rgba(235, 235, 237, 1) 10%, rgba(235, 235, 237, 0) 40%),
+    linear-gradient(to top, rgba(235, 235, 237, 1) 15%, rgba(235, 235, 237, 0) 40%),
+    url(/images/news/d4bac8bccb111d163cae4996fe04bbcead5c7d69.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stock-slide-two {
+  background:
+    linear-gradient(to bottom, rgba(235, 235, 237, 0.2) 0%, rgba(235, 235, 237, 0) 50%),
+    linear-gradient(to top, rgba(235, 235, 237, 1) 10%, rgba(235, 235, 237, 0) 30%),
+    url(/images/news/2d5db865dfaaaed29fa321ffbce1f44463e066a7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.stock-slide-three {
+  background:
+    linear-gradient(to bottom, rgba(235, 235, 237, 1) 10%, rgba(235, 235, 237, 0) 30%),
+    linear-gradient(to top, rgba(235, 235, 237, 1) 20%, rgba(235, 235, 237, 0) 30%),
+    url(/images/news/4769bdb6440ad073287f67d4fcedd2a8907ea579.png);
+  background-position: center 65%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.stock-slide-four {
+  background:
+    linear-gradient(to top, rgba(235, 235, 237, 1) 20%, rgba(235, 235, 237, 0) 30%),
+    url(/images/news/b5e3cf3424d33434c1bea7037c2509b2981a3eb1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.stock-slide-five {
+  background:
+    /* Нижний градиент: от rgba(235, 235, 237, 1) к прозрачному */
+    linear-gradient(to top, rgba(235, 235, 237, 1) 10%, rgba(235, 235, 237, 0) 30%),
+    /* Фоновое изображение */
+    url(/images/news/85e8510757e89829de2ba81fd217745c2bd053ad.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.stock-card-title {
+  font-family: var(--GeisM);
+  font-size: 25px;
+  line-height: 100%;
+  color: var(--color-title);
+  margin-bottom: 20px;
+}
+
+.stock-card-subtitle {
+  max-width: 427px;
+  font-family: var(--GeisR);
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.stock-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+}
+
+.stock-grid .stock-slide {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.stock-card-btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* .stock-wrapper {
+  display: block;
+}
+
+.stock-wrapper.stock-grid {
+  display: none;
+} */
+
+
+@media (min-width:1200px) {
+  .stock {
+    margin-bottom: 200px;
+  }
+
+  .stock-content-mid {
+    margin-top: 45px;
+  }
+
+  .stock-slide {
+    min-width: 487.33px;
+    padding: 20px 0 20px 30px;
+
+  }
+
+  .stock-swiper-pagination {
+    display: none;
+  }
+
+  /* .stock-card-btn-box {
+    display: flex;
+    justify-content: flex-start;
+  } */
+  /* .stock-wrapper.stock-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .stock-wrapper {
+    display: none;
+  } */
+
+
+  .stock-wrapper {
+    display: none !important;
+  }
+
+  .stock-wrapper.stock-grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+    /* Делим на 6 частей для гибкости */
+    gap: 10px;
+  }
+
+
+  .stock-slide-one:nth-child(1),
+  .stock-slide-two:nth-child(2),
+  .stock-slide-three:nth-child(3) {
+    grid-column: span 2;
+    /* 2/6 = 1/3 ширины */
+  }
+
+  /* Вторая строка: 2 элемента по 3/6 (1/2) */
+  .stock-slide-four:nth-child(4),
+  .stock-slide-five:nth-child(5) {
+    grid-column: span 3;
+    /* 3/6 = 1/2 ширины */
+  }
+
+  /* карточки  */
+
+  /* .stock-slide-one {
+    flex-grow: 3;
+    flex-shrink: 0;
+  }
+
+  .stock-slide-two {
+    flex-grow: 1;
+  }
+
+  .stock-slide-three {
+    flex-grow: 1;
+
+  }
+
+  .stock-slide-four {
+    flex-grow: 1;
+  }
+
+  .stock-slide-five {
+    flex-grow: 1.5;
+    flex-shrink: 0;
+  } */
+
+
+
+}
+
+@media (min-width:1400px) {}

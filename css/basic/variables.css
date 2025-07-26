@@ -1,0 +1,17 @@
+:root {
+  --body-bg: #FFFFFF;
+  --hit-pink: #FF68AA;
+  --sale: #FFED65;
+  --color-title: #222222;
+  --color-text: #B4B4B4;
+  --bg-popup: rgba(237, 231, 224, 0.5);
+  --hover-color: #6D808E;
+
+  /* Шрифты  */
+
+  --GeisM: GeisM;
+  --GeisR: GeisR;
+  --lighthaus: lighthaus;
+
+
+}

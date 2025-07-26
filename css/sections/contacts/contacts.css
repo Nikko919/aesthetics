@@ -1,0 +1,293 @@
+.page-contact {
+  margin-bottom: 120px;
+}
+
+.details-box {
+  margin-top: 25px;
+}
+
+
+.details-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+
+}
+
+.details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid var(--color-title);
+  /* padding-bottom: 6px; */
+  padding: 12px 0;
+
+}
+
+.details-item-title {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  color: var(--color-title);
+}
+
+.details-item-value {
+  font-family: var(--GeisR);
+  font-size: 14px;
+}
+
+
+.contact-info-team-box {
+  margin-top: 45px;
+}
+
+.contact-info-cards {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.contact-info-cards>.about-content-card:not(:last-child) {
+  width: 100%;
+  border-bottom: 1px solid #0d0c0c;
+}
+
+/* локация точек */
+
+
+.contact-info-location-box {
+  margin-top: 120px;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info-location-left {
+  max-width: 300px;
+}
+
+.contact-info-location-left:first-child {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--color-title);
+
+}
+
+.contact-info-location-left:last-child {
+  margin-top: 25px;
+
+}
+
+.location-btn {
+  background-color: transparent;
+  font-family: var(--GeisR);
+  font-size: 18px;
+  color: var(--color-title);
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+
+.location-title {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  color: var(--color-title);
+  margin-bottom: 20px;
+}
+
+.location-address {
+  max-width: 653px;
+  font-family: var(--GeisR);
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.location-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info-location-map-box {
+  margin-top: 45px;
+}
+
+/* Показывать только активную карту */
+.map-item {
+  display: none;
+}
+
+.map-item.active {
+  display: block;
+}
+
+.map-item {
+  filter: grayscale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px) {
+  .contact-info-location-box {
+    margin-top: 120px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    align-items: stretch;
+  }
+
+  .contact-info-location-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info-location-left:last-child {
+    margin-top: 0px;
+  }
+
+  .contact-info-location-left:first-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+
+  }
+
+  .contact-info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    margin-left: 30px;
+  }
+
+  .location-text-box {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+  }
+
+  .contact-info-cards>.about-content-card:last-child {
+    width: 100%;
+    border-bottom: 1px solid #0d0c0c;
+  }
+}
+
+@media (min-width:1024px) {}
+
+/* @media (min-width:1200px) {}
+
+@media (min-width:1200px) {} */
+
+@media (min-width:1200px) {
+  .page-contact {
+    margin-bottom: 200px;
+  }
+
+  .details-box {
+    margin-top: 85px;
+  }
+
+  .details-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12.5px 45px;
+
+  }
+
+  .contact-info-cards>.about-content-card:not(:last-child) {
+    width: auto;
+    border-bottom: none;
+  }
+
+  /* чтоб если будет болье карточек не было бордера  */
+  .contact-info-cards>.about-content-card:last-child {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  /* чтоб если будет болье карточек не было бордера   доавил  flex-wrap: wrap; */
+
+  .contact-info-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+
+  .details-item-title {
+    font-family: var(--GeisM);
+    font-size: 25px;
+    color: var(--color-title);
+  }
+
+  .details-item-value {
+    font-family: var(--GeisR);
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .contact-info-team-box {
+    margin-top: 60px;
+  }
+
+  /* локация точек */
+
+  .contact-info-location-left:first-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+
+  }
+
+  .contact-info-location-left:last-child {
+    margin-top: 0px;
+  }
+
+  .contact-info-location-left {
+    max-width: 653px;
+  }
+
+  .contact-info-location-box {
+    margin-top: 200px;
+  }
+
+  .location-title {
+    font-family: var(--GeisM);
+    font-size: 25px;
+    color: var(--color-title);
+    margin-bottom: 20px;
+  }
+
+  .location-address {
+    max-width: 653px;
+    font-family: var(--GeisR);
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-text);
+  }
+
+
+
+
+
+
+}

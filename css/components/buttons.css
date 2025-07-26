@@ -1,0 +1,135 @@
+/* Кнопка  */
+
+
+
+.hero-btn {
+
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--color-title);
+}
+
+.sale-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--color-title);
+
+}
+
+/* кнопка акции */
+.stock-btn {
+  flex-shrink: 1;
+  min-height: 48px;
+  border-right: 1px dashed var(--color-title);
+
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+.sale-btn-box {
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+
+.btn-svg-box {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* кнопка акции */
+
+.btn-svg-box_border {
+  margin-left: -1px;
+  width: 48px;
+  min-height: 48px;
+  border: 1px solid var(--color-title);
+  border-left: 1px dashed var(--color-title);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  -webkit-transition: transform 0.4s ease, background-color 0.4s ease;
+  -moz-transition: transform 0.4s ease, background-color 0.4s ease;
+  -ms-transition: transform 0.4s ease, background-color 0.4s ease;
+  -o-transition: transform 0.4s ease, background-color 0.4s ease;
+  transform-origin: left bottom;
+  cursor: pointer;
+}
+
+/* SVG */
+.btn-svg-box>svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-title);
+  transition: 0.4s ease;
+
+}
+
+
+
+
+
+
+
+/* .hero-btn .btn-svg-box svg path {
+  fill: var(--color-title);
+} */
+
+
+
+
+
+@media (hover:hover) {
+  .sale-btn-box:hover>.btn-svg-box_border {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+
+
+}
+
+/* 
+@keyframes tilt-right {
+
+
+
+  to {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+  }
+
+} */

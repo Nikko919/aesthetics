@@ -1,0 +1,232 @@
+/* выпадающий каталог  */
+.hero-catalog-popup-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: none;
+  padding: 20px 10px;
+  /*background-color: var(--color-title);
+  */
+  background-color: var(--body-bg);
+  z-index: 5;
+  /*min-height: 100%;
+  */
+  width: 100%;
+  max-height: 605px;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+
+.hero-catalog-popup {
+  display: flex;
+  gap: 25px;
+}
+
+.hero-catalog-tab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 155px;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  min-height: 265px;
+  max-height: 265px;
+}
+
+.hero-catalog-tab-content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-catalog-tab-content-list-box {
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* max-height: 100%; */
+  /* min-height: 565px;*/
+  max-height: 565px;
+
+}
+
+.hero-catalog-tab-content-list {
+  max-width: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-catalog-tab-content-list:first-child {
+  border-bottom: 1px solid var(--color-title);
+  padding-bottom: 20px;
+}
+
+.hero-catalog-tab-content-list:last-child {
+  margin-top: 20px;
+}
+
+.hero-catalog-tab-content-link {
+  display: inline-block;
+  font-family: var(--GeisR);
+  font-size: 14px;
+  color: var(--color-title);
+  max-width: 100%;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+}
+
+.hero-catalog-item-btn {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  color: var(--color-title);
+  line-height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: start;
+  /* padding: 10px; */
+}
+
+.hero-catalog-popup-close-box {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-catalog-item-btn.active {
+  color: var(--hover-color);
+  /* любые ваши стили для активного таба */
+}
+
+
+@media (hover:hover) {
+  .hero-catalog-tab-content-link:hover {
+    color: var(--hover-color);
+  }
+}
+
+/* Адаптивность  */
+@media (min-width:700px) {
+
+  .hero-catalog-popup-box {
+    /* display: flex; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* под вопросом  */
+    height: 100%;
+  }
+
+  .hero-catalog-popup {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 35px;
+  }
+
+  .hero-catalog-tab-content-box {
+    flex: 1 1 auto;
+  }
+
+  .hero-catalog-tab-content-list-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero-catalog-tab-content-list {
+    border-left: 1px solid var(--color-title);
+    padding-left: 20px;
+  }
+
+  .hero-catalog-tab-content-list:first-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .hero-catalog-tab-content-list:last-child {
+    margin-top: 0;
+  }
+
+  .hero-catalog-popup-close-box {
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+
+  .hero-catalog-tab-content-list {
+    max-width: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width:1020px) {
+  .hero-catalog-popup-box {
+    height: 242px;
+    max-width: 950px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .hero-catalog-tab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 275px;
+  }
+
+  .hero-catalog-popup {
+    gap: 55px;
+  }
+
+  .hero-catalog-tab-content-list-box {
+    gap: 40px;
+  }
+}
+
+@media (min-width:1200px) {
+
+  /* выпадающее меню  */
+  .hero-catalog-popup-box {
+    top: auto;
+    left: 52px;
+    bottom: 30px;
+    transform: translate(0, 0);
+    padding: 20px 30px;
+    max-height: 282px;
+    height: auto;
+    max-width: 1027px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+
+  .hero-catalog-tab-list {
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    min-height: 202px;
+    max-height: 202px;
+  }
+
+  .hero-catalog-popup {
+    gap: 85px;
+  }
+
+  .hero-catalog-tab-content-link {
+    font-size: 16px;
+  }
+}

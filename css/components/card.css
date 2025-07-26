@@ -1,0 +1,211 @@
+.cards {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.card {
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-top {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #F9F9FB;
+  min-height: 240px;
+}
+
+.status-tag-box {
+  position: absolute;
+  display: none;
+  align-items: center;
+}
+
+.status-tag-box-block {
+  display: flex;
+}
+
+.status-tag-pink {
+  padding: 5px 10px;
+  background-color: var(--hit-pink);
+}
+
+.status-tag-yellow {
+  display: none;
+  padding: 5px 10px;
+  background-color: var(--sale);
+}
+
+.status-tag-yellow-block {
+  display: block;
+}
+
+
+.status-top {
+  font-family: var(--lighthaus);
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--color-title);
+}
+
+.card-img-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-position: bottom; */
+  object-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-mid {
+  margin-top: 20px;
+}
+
+.card-title {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--color-title);
+  text-wrap: wrap;
+}
+
+.card-characteristics-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-characteristics {
+  font-family: var(--GeisR);
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-text);
+  text-wrap: wrap;
+
+}
+
+.price-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.price {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  color: var(--color-title);
+}
+
+/* добавляем этот класс чтоб поменять увет на цвет скидки  */
+.price_pink {
+  color: var(--hit-pink);
+}
+
+/* добвляем перечеркнутую цену  */
+.price-sale {
+  display: none;
+  font-family: var(--GeisR);
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--color-text);
+  text-decoration: line-through;
+}
+
+.price-sale-block {
+  display: block;
+}
+
+.card-bottom {
+  margin-top: 15px;
+}
+
+.card-text-btn {
+  font-size: 15px;
+  /* font-size: 16px; */
+}
+
+.card-btn {
+  gap: 0;
+}
+
+@media (min-width:1200px) {
+  .card {
+    min-width: 276.5px;
+  }
+
+  /* .status-tag_color-pink {
+    padding: 10px 15px;
+    background-color: var(--hit-pink);
+  } */
+
+  .status-top {
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 25px;
+    line-height: 100%;
+  }
+
+
+
+  .card-img-box {
+    width: 100%;
+    min-height: 340px;
+  }
+
+  .card-characteristics-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-characteristics {
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .price-box {
+    margin-top: 20px;
+  }
+
+  .price {
+    font-size: 25px;
+  }
+
+  .card-text-btn {
+    font-size: 20px;
+  }
+
+  .card-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  /* добвляем перечеркнутую цену  */
+  .price-sale {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+}

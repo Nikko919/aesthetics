@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\style.css">
+
+  <script defer src="js/swiper/swiper-bundle.js"></script>
+  <script defer src="js/swiper/initialization.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/popup/formClouse.js"></script>
+  <script defer src="js/burger/burger.js"></script>
+  <script defer src="js/catalog/catalog-filter.js"></script>
+  <script defer src="js/catalog-tabs.js"></script>
+  <script defer src="js/cookie.js"></script>
+  <script defer src="js/popup/popupValidation.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+
+
+  <!-- библиотека пагинации -->
+  <script defer src="js/catalog/pagination.js"></script>
+  <script defer src="js/catalog/catalog-pagination-init.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+  <title>Эстетика</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__top">
+            <div class="header__logo">
+              <a href="##" class="logo-link">
+                ЭСТEТИКА
+              </a>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item-home "><a href="##" class="menu__item-link">Главная</a></li>
+                <li class="menu__item">
+                  <a href="#about" class="menu__item-link">О нас</a>
+                </li>
+                <li class="menu__item"><a href="page-catalog.html" class="menu__item-link">Каталог</a></li>
+                <li class="menu__item"><a href="page-contact.html" class="menu__item-link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="burger__box">
+              <span>Меню</span>
+              <div class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </div>
+            </div>
+            <div class="header__contact-box">
+              <div class="header__contact-soc">
+                <a class="social-link" href="https://t.me/##">
+                  <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="13.4414" r="9.9375" stroke-width="2" />
+                    <path d="M17.9583 8.91702C18.0557 8.28775 17.4573 7.79106 16.8978 8.03672L5.75376 12.9296C5.35252 13.1057 5.38187 13.7135 5.79802 13.846L8.09621 14.5779C8.53483 14.7176 9.00979 14.6453 9.3928 14.3807L14.5742 10.801C14.7304 10.693 14.9008 10.9152 14.7673 11.0528L11.0376 14.8982C10.6758 15.2712 10.7476 15.9032 11.1828 16.1762L15.3586 18.7948C15.8269 19.0885 16.4294 18.7934 16.517 18.2275L17.9583 8.91702Z" />
+                  </svg>
+                </a>
+                <a class="social-link" href="whatsapp://send?phone=##">
+                  <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24.3789C18.5406 24.3789 23.4375 19.482 23.4375 13.4414C23.4375 7.40079 18.5406 2.50391 12.5 2.50391C6.45939 2.50391 1.5625 7.40079 1.5625 13.4414C1.5625 15.403 2.0789 17.244 2.98318 18.8359L1.5625 24.3789L7.27724 23.0537C8.8292 23.8988 10.6085 24.3789 12.5 24.3789ZM12.5 22.6962C17.6113 22.6962 21.7548 18.5527 21.7548 13.4414C21.7548 8.33012 17.6113 4.1866 12.5 4.1866C7.38871 4.1866 3.24519 8.33012 3.24519 13.4414C3.24519 15.4149 3.86289 17.2441 4.9155 18.7463L4.08654 21.8549L7.24995 21.064C8.74169 22.0934 10.5504 22.6962 12.5 22.6962Z" />
+                    <path d="M9.76564 8.36336C9.50559 7.84103 9.10666 7.88728 8.70365 7.88728C7.98341 7.88728 6.86035 8.75 6.86035 10.3556C6.86035 11.6715 7.44019 13.1119 9.39408 15.2667C11.2797 17.3462 13.7573 18.4219 15.8142 18.3853C17.8711 18.3487 18.2943 16.5786 18.2943 15.9809C18.2943 15.7159 18.1299 15.5838 18.0166 15.5478C17.3157 15.2114 16.0229 14.5847 15.7288 14.4669C15.4346 14.3491 15.281 14.5084 15.1856 14.5951C14.9188 14.8493 14.39 15.5984 14.209 15.7669C14.0279 15.9354 13.758 15.8502 13.6457 15.7865C13.2324 15.6206 12.1117 15.1221 11.2183 14.2561C10.1135 13.1852 10.0487 12.8167 9.84055 12.4887C9.67403 12.2263 9.79622 12.0653 9.8572 11.995C10.0952 11.7203 10.4239 11.2963 10.5713 11.0855C10.7187 10.8748 10.6017 10.5549 10.5315 10.3556C10.2295 9.49861 9.97368 8.78122 9.76564 8.36336Z" />
+                  </svg>
+                </a>
+                <a class="social-link" href="##">
+                  <svg class="no-fill" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.128 18.1289C8.32341 18.1289 5.58294 14.903 5.46875 9.53516H7.87545C7.9545 13.475 9.72878 15.1439 11.1342 15.488V9.53516H13.4003V12.9331C14.7881 12.7868 16.2462 11.2384 16.7381 9.53516H19.0042C18.8189 10.4185 18.4494 11.2549 17.9189 11.992C17.3884 12.7292 16.7083 13.3512 15.9212 13.8191C16.7998 14.2467 17.5759 14.8519 18.1982 15.5948C18.8205 16.3377 19.2748 17.2014 19.5312 18.1289H17.0367C16.8065 17.3233 16.3387 16.6022 15.6918 16.0559C15.0449 15.5096 14.2478 15.1624 13.4003 15.0579V18.1289H13.128Z" />
+                    <path d="M12.0439 3.50391H12.9561C15.4586 3.50391 17.2369 3.50607 18.585 3.68652C19.7399 3.84116 20.4625 4.11402 20.9922 4.54688L21.208 4.74219C21.7516 5.29002 22.0803 6.04613 22.2559 7.3623C22.4352 8.70723 22.4375 10.479 22.4375 12.9678V13.8975C22.4375 16.3952 22.4353 18.1713 22.2559 19.5186C22.0803 20.8371 21.7515 21.5929 21.208 22.1406C20.6596 22.6889 19.9061 23.0197 18.5879 23.1963C17.2411 23.3767 15.4633 23.3789 12.9561 23.3789H12.0439C9.54613 23.3789 7.77061 23.3767 6.42383 23.1963C5.10482 23.0196 4.34888 22.6887 3.80078 22.1406C3.25256 21.5924 2.92179 20.8362 2.74512 19.5195C2.56477 18.1751 2.5625 16.4038 2.5625 13.915V12.9854C2.5625 10.4876 2.56473 8.71153 2.74414 7.36426C2.91973 6.04574 3.24854 5.2899 3.79199 4.74219C4.34038 4.19389 5.09387 3.86313 6.41211 3.68652C7.7589 3.50609 9.53672 3.50391 12.0439 3.50391Z" stroke-width="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- <div class="header__bottom"></div> -->
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="error">
+        <div class="container">
+          <div class="error-content">
+            <div class="error-content-top">
+              <div class="error-content-top-img-box">
+                <svg viewBox="0 0 846 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <foreignObject x="-7.6" y="-12.1" width="279.2" height="362.2">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(6.05px);clip-path:url(#bgblur_0_145_3517_clip_path);height:100%;width:100%"></div>
+                  </foreignObject>
+                  <g filter="url(#filter0_dn_145_3517)" data-figma-bg-blur-radius="12.1">
+                    <path d="M176.216 337V264.121H5.5V227.208L173.379 1H216.885V224.369H258.5V264.121H216.885V337H176.216ZM54.6813 224.369H176.216V63.4676L54.6813 224.369Z" fill="white" fill-opacity="0.4" shape-rendering="crispEdges" />
+                    <path d="M217.385 0.5V223.869H259V264.621H217.385V337.5H175.716V264.621H5V227.043L5.09863 226.91L172.977 0.702148L173.127 0.5H217.385ZM55.6846 223.869H175.716V64.959L55.6846 223.869Z" stroke="#B4B4B4" shape-rendering="crispEdges" />
+                  </g>
+                  <foreignObject x="282.4" y="-12.1" width="281.2" height="362.2">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(6.05px);clip-path:url(#bgblur_1_145_3517_clip_path);height:100%;width:100%"></div>
+                  </foreignObject>
+                  <g filter="url(#filter1_dn_145_3517)" data-figma-bg-blur-radius="12.1">
+                    <path d="M422.774 337C396.805 337 374.31 330.208 355.287 316.623C336.264 303.038 321.468 283.717 310.9 258.66C300.633 233.604 295.5 203.868 295.5 169.453C295.5 135.038 300.633 105.302 310.9 80.2453C321.468 54.8868 336.264 35.4151 355.287 21.8302C374.31 7.9434 396.805 1 422.774 1C449.044 1 471.69 7.9434 490.713 21.8302C509.736 35.4151 524.381 54.7358 534.647 79.7924C545.216 104.849 550.5 134.736 550.5 169.453C550.5 203.868 545.216 233.604 534.647 258.66C524.381 283.717 509.736 303.038 490.713 316.623C471.69 330.208 449.044 337 422.774 337ZM422.774 298.962C450.553 298.962 471.992 287.792 487.09 265.453C502.187 242.811 509.736 210.811 509.736 169.453C509.736 141.679 506.264 118.132 499.319 98.8113C492.676 79.1887 482.862 64.3962 469.878 54.434C457.196 44.1698 441.495 39.0377 422.774 39.0377C404.354 39.0377 388.653 44.1698 375.669 54.434C362.987 64.3962 353.173 79.1887 346.228 98.8113C339.585 118.132 336.264 141.679 336.264 169.453C336.264 210.811 343.813 242.811 358.91 265.453C374.008 287.792 395.296 298.962 422.774 298.962Z" fill="white" fill-opacity="0.4" shape-rendering="crispEdges" />
+                    <path d="M422.773 0.5C449.134 0.5 471.885 7.46883 491.003 21.4229C510.113 35.0698 524.812 54.4704 535.108 79.5977L535.602 80.7793C545.873 105.668 551 135.23 551 169.453C551 203.918 545.709 233.723 535.108 258.854C524.812 283.982 510.114 303.382 491.004 317.029C471.886 330.682 449.134 337.5 422.773 337.5C396.713 337.5 374.113 330.681 354.996 317.029C335.886 303.382 321.037 283.982 310.438 258.854L310.437 258.85C300.14 233.719 295 203.916 295 169.453C295 134.99 300.14 105.186 310.437 80.0557L310.438 80.0527C321.036 54.6236 335.885 35.0708 354.996 21.4229C374.113 7.46927 396.713 0.500018 422.773 0.5ZM422.773 39.5381C404.453 39.5381 388.864 44.6397 375.979 54.8262L375.978 54.8271C363.39 64.7152 353.622 79.4163 346.7 98.9727L346.701 98.9736C340.081 118.227 336.764 141.716 336.764 169.453C336.764 210.759 344.304 242.646 359.324 265.173L360.032 266.205C374.989 287.716 395.885 298.462 422.773 298.462C450.393 298.462 471.674 287.37 486.676 265.173C501.696 242.646 509.236 210.759 509.236 169.453C509.236 141.718 505.769 118.232 498.849 98.9805L498.845 98.9717C492.225 79.4182 482.461 64.7188 469.574 54.8311L469.563 54.8223C456.983 44.6408 441.398 39.5381 422.773 39.5381Z" stroke="#B4B4B4" shape-rendering="crispEdges" />
+                  </g>
+                  <foreignObject x="574.4" y="-12.1" width="279.2" height="362.2">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(6.05px);clip-path:url(#bgblur_2_145_3517_clip_path);height:100%;width:100%"></div>
+                  </foreignObject>
+                  <g filter="url(#filter2_dn_145_3517)" data-figma-bg-blur-radius="12.1">
+                    <path d="M758.216 337V264.121H587.5V227.208L755.379 1H798.885V224.369H840.5V264.121H798.885V337H758.216ZM636.681 224.369H758.216V63.4676L636.681 224.369Z" fill="white" fill-opacity="0.4" shape-rendering="crispEdges" />
+                    <path d="M799.385 0.5V223.869H841V264.621H799.385V337.5H757.716V264.621H587V227.043L587.099 226.91L754.977 0.702148L755.127 0.5H799.385ZM637.685 223.869H757.716V64.959L637.685 223.869Z" stroke="#B4B4B4" shape-rendering="crispEdges" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_dn_145_3517" x="-7.6" y="-12.1" width="279.2" height="362.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                      <feBlend mode="hard-light" in2="BackgroundImageFix" result="effect1_dropShadow_145_3517" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feTurbulence type="fractalNoise" baseFrequency="0.76923078298568726 0.76923078298568726" stitchTiles="stitch" numOctaves="3" result="noise" seed="6353" />
+                      <feComponentTransfer in="noise" result="coloredNoise1">
+                        <feFuncR type="linear" slope="2" intercept="-0.5" />
+                        <feFuncG type="linear" slope="2" intercept="-0.5" />
+                        <feFuncB type="linear" slope="2" intercept="-0.5" />
+                        <feFuncA type="discrete" tableValues="0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+                      </feComponentTransfer>
+                      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+                      <feComponentTransfer in="noise1Clipped" result="color1">
+                        <feFuncA type="table" tableValues="0 0.11" />
+                      </feComponentTransfer>
+                      <feMerge result="effect2_noise_145_3517">
+                        <feMergeNode in="shape" />
+                        <feMergeNode in="color1" />
+                      </feMerge>
+                      <feBlend mode="normal" in="effect2_noise_145_3517" in2="effect1_dropShadow_145_3517" result="effect2_noise_145_3517" />
+                    </filter>
+                    <clipPath id="bgblur_0_145_3517_clip_path" transform="translate(7.6 12.1)">
+                      <path d="M176.216 337V264.121H5.5V227.208L173.379 1H216.885V224.369H258.5V264.121H216.885V337H176.216ZM54.6813 224.369H176.216V63.4676L54.6813 224.369Z" />
+                    </clipPath>
+                    <filter id="filter1_dn_145_3517" x="282.4" y="-12.1" width="281.2" height="362.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                      <feBlend mode="hard-light" in2="BackgroundImageFix" result="effect1_dropShadow_145_3517" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feTurbulence type="fractalNoise" baseFrequency="0.76923078298568726 0.76923078298568726" stitchTiles="stitch" numOctaves="3" result="noise" seed="6353" />
+                      <feComponentTransfer in="noise" result="coloredNoise1">
+                        <feFuncR type="linear" slope="2" intercept="-0.5" />
+                        <feFuncG type="linear" slope="2" intercept="-0.5" />
+                        <feFuncB type="linear" slope="2" intercept="-0.5" />
+                        <feFuncA type="discrete" tableValues="0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+                      </feComponentTransfer>
+                      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+                      <feComponentTransfer in="noise1Clipped" result="color1">
+                        <feFuncA type="table" tableValues="0 0.11" />
+                      </feComponentTransfer>
+                      <feMerge result="effect2_noise_145_3517">
+                        <feMergeNode in="shape" />
+                        <feMergeNode in="color1" />
+                      </feMerge>
+                      <feBlend mode="normal" in="effect2_noise_145_3517" in2="effect1_dropShadow_145_3517" result="effect2_noise_145_3517" />
+                    </filter>
+                    <clipPath id="bgblur_1_145_3517_clip_path" transform="translate(-282.4 12.1)">
+                      <path d="M422.774 337C396.805 337 374.31 330.208 355.287 316.623C336.264 303.038 321.468 283.717 310.9 258.66C300.633 233.604 295.5 203.868 295.5 169.453C295.5 135.038 300.633 105.302 310.9 80.2453C321.468 54.8868 336.264 35.4151 355.287 21.8302C374.31 7.9434 396.805 1 422.774 1C449.044 1 471.69 7.9434 490.713 21.8302C509.736 35.4151 524.381 54.7358 534.647 79.7924C545.216 104.849 550.5 134.736 550.5 169.453C550.5 203.868 545.216 233.604 534.647 258.66C524.381 283.717 509.736 303.038 490.713 316.623C471.69 330.208 449.044 337 422.774 337ZM422.774 298.962C450.553 298.962 471.992 287.792 487.09 265.453C502.187 242.811 509.736 210.811 509.736 169.453C509.736 141.679 506.264 118.132 499.319 98.8113C492.676 79.1887 482.862 64.3962 469.878 54.434C457.196 44.1698 441.495 39.0377 422.774 39.0377C404.354 39.0377 388.653 44.1698 375.669 54.434C362.987 64.3962 353.173 79.1887 346.228 98.8113C339.585 118.132 336.264 141.679 336.264 169.453C336.264 210.811 343.813 242.811 358.91 265.453C374.008 287.792 395.296 298.962 422.774 298.962Z" />
+                    </clipPath>
+                    <filter id="filter2_dn_145_3517" x="574.4" y="-12.1" width="279.2" height="362.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                      <feBlend mode="hard-light" in2="BackgroundImageFix" result="effect1_dropShadow_145_3517" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feTurbulence type="fractalNoise" baseFrequency="0.76923078298568726 0.76923078298568726" stitchTiles="stitch" numOctaves="3" result="noise" seed="6353" />
+                      <feComponentTransfer in="noise" result="coloredNoise1">
+                        <feFuncR type="linear" slope="2" intercept="-0.5" />
+                        <feFuncG type="linear" slope="2" intercept="-0.5" />
+                        <feFuncB type="linear" slope="2" intercept="-0.5" />
+                        <feFuncA type="discrete" tableValues="0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+                      </feComponentTransfer>
+                      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+                      <feComponentTransfer in="noise1Clipped" result="color1">
+                        <feFuncA type="table" tableValues="0 0.11" />
+                      </feComponentTransfer>
+                      <feMerge result="effect2_noise_145_3517">
+                        <feMergeNode in="shape" />
+                        <feMergeNode in="color1" />
+                      </feMerge>
+                      <feBlend mode="normal" in="effect2_noise_145_3517" in2="effect1_dropShadow_145_3517" result="effect2_noise_145_3517" />
+                    </filter>
+                    <clipPath id="bgblur_2_145_3517_clip_path" transform="translate(-574.4 12.1)">
+                      <path d="M758.216 337V264.121H587.5V227.208L755.379 1H798.885V224.369H840.5V264.121H798.885V337H758.216ZM636.681 224.369H758.216V63.4676L636.681 224.369Z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </div>
+
+            </div>
+            <div class="error-content-bottom">
+              <div class="error-text-box">
+                <p class="error-text">
+                  Кажется что-то пошло не так! Страница, которую вы запрашиваете не существует.
+                </p>
+                <p class="error-text">
+                  Возможно она устарела, была удалена, или был введен неверный адрес в адресной ссылке
+                </p>
+              </div>
+              <a href="index.html" class="hero-btn card-btn  error-btn"><span class="text-btn card-text-btn">Заказать товар</span>
+                <div class="btn-svg-box">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-top footer-top">
+            <div class="footer-top__columns">
+              <div class="footer-top__column">
+                <div class="footer-top__column-social-box">
+                  <a class="social-link" href="https://t.me/##">
+                    <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12.5" cy="13.4414" r="9.9375" stroke-width="2" />
+                      <path d="M17.9583 8.91702C18.0557 8.28775 17.4573 7.79106 16.8978 8.03672L5.75376 12.9296C5.35252 13.1057 5.38187 13.7135 5.79802 13.846L8.09621 14.5779C8.53483 14.7176 9.00979 14.6453 9.3928 14.3807L14.5742 10.801C14.7304 10.693 14.9008 10.9152 14.7673 11.0528L11.0376 14.8982C10.6758 15.2712 10.7476 15.9032 11.1828 16.1762L15.3586 18.7948C15.8269 19.0885 16.4294 18.7934 16.517 18.2275L17.9583 8.91702Z" />
+                    </svg>
+                  </a>
+
+                  <a class="social-link" href="whatsapp://send?phone=##">
+                    <svg class="svg-item" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 24.3789C18.5406 24.3789 23.4375 19.482 23.4375 13.4414C23.4375 7.40079 18.5406 2.50391 12.5 2.50391C6.45939 2.50391 1.5625 7.40079 1.5625 13.4414C1.5625 15.403 2.0789 17.244 2.98318 18.8359L1.5625 24.3789L7.27724 23.0537C8.8292 23.8988 10.6085 24.3789 12.5 24.3789ZM12.5 22.6962C17.6113 22.6962 21.7548 18.5527 21.7548 13.4414C21.7548 8.33012 17.6113 4.1866 12.5 4.1866C7.38871 4.1866 3.24519 8.33012 3.24519 13.4414C3.24519 15.4149 3.86289 17.2441 4.9155 18.7463L4.08654 21.8549L7.24995 21.064C8.74169 22.0934 10.5504 22.6962 12.5 22.6962Z" />
+                      <path d="M9.76564 8.36336C9.50559 7.84103 9.10666 7.88728 8.70365 7.88728C7.98341 7.88728 6.86035 8.75 6.86035 10.3556C6.86035 11.6715 7.44019 13.1119 9.39408 15.2667C11.2797 17.3462 13.7573 18.4219 15.8142 18.3853C17.8711 18.3487 18.2943 16.5786 18.2943 15.9809C18.2943 15.7159 18.1299 15.5838 18.0166 15.5478C17.3157 15.2114 16.0229 14.5847 15.7288 14.4669C15.4346 14.3491 15.281 14.5084 15.1856 14.5951C14.9188 14.8493 14.39 15.5984 14.209 15.7669C14.0279 15.9354 13.758 15.8502 13.6457 15.7865C13.2324 15.6206 12.1117 15.1221 11.2183 14.2561C10.1135 13.1852 10.0487 12.8167 9.84055 12.4887C9.67403 12.2263 9.79622 12.0653 9.8572 11.995C10.0952 11.7203 10.4239 11.2963 10.5713 11.0855C10.7187 10.8748 10.6017 10.5549 10.5315 10.3556C10.2295 9.49861 9.97368 8.78122 9.76564 8.36336Z" />
+                    </svg>
+                  </a>
+
+                  <a class="social-link" href="##">
+                    <svg class="no-fill" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.128 18.1289C8.32341 18.1289 5.58294 14.903 5.46875 9.53516H7.87545C7.9545 13.475 9.72878 15.1439 11.1342 15.488V9.53516H13.4003V12.9331C14.7881 12.7868 16.2462 11.2384 16.7381 9.53516H19.0042C18.8189 10.4185 18.4494 11.2549 17.9189 11.992C17.3884 12.7292 16.7083 13.3512 15.9212 13.8191C16.7998 14.2467 17.5759 14.8519 18.1982 15.5948C18.8205 16.3377 19.2748 17.2014 19.5312 18.1289H17.0367C16.8065 17.3233 16.3387 16.6022 15.6918 16.0559C15.0449 15.5096 14.2478 15.1624 13.4003 15.0579V18.1289H13.128Z" />
+                      <path d="M12.0439 3.50391H12.9561C15.4586 3.50391 17.2369 3.50607 18.585 3.68652C19.7399 3.84116 20.4625 4.11402 20.9922 4.54688L21.208 4.74219C21.7516 5.29002 22.0803 6.04613 22.2559 7.3623C22.4352 8.70723 22.4375 10.479 22.4375 12.9678V13.8975C22.4375 16.3952 22.4353 18.1713 22.2559 19.5186C22.0803 20.8371 21.7515 21.5929 21.208 22.1406C20.6596 22.6889 19.9061 23.0197 18.5879 23.1963C17.2411 23.3767 15.4633 23.3789 12.9561 23.3789H12.0439C9.54613 23.3789 7.77061 23.3767 6.42383 23.1963C5.10482 23.0196 4.34888 22.6887 3.80078 22.1406C3.25256 21.5924 2.92179 20.8362 2.74512 19.5195C2.56477 18.1751 2.5625 16.4038 2.5625 13.915V12.9854C2.5625 10.4876 2.56473 8.71153 2.74414 7.36426C2.91973 6.04574 3.24854 5.2899 3.79199 4.74219C4.34038 4.19389 5.09387 3.86313 6.41211 3.68652C7.7589 3.50609 9.53672 3.50391 12.0439 3.50391Z" stroke-width="2" />
+                    </svg>
+                  </a>
+                </div>
+                <span class="footer-top__column-description">Политика конфиндециальности Политика конфиндециальности</span>
+                <span class="footer-top__column-description">ООО....</span>
+              </div>
+              <div class="footer-top__column-box">
+                <div class="footer-top__column footer-top__column-contact ">
+                  <a href="tel:##" class="footer-top__column-description description-hover ">+7(000)000-00-00</a>
+                  <a href="tel:##" class="footer-top__column-description description-hover ">+7(000)000-00-00</a>
+                  <a href="mailto:##" class="footer-top__column-description description-hover ">info@company.com</a>
+                </div>
+                <div class="footer-top__column">
+                  <span class="footer-top__column-description">
+                    Адрес:
+                    <a class="description-hover" href="##">
+                      Где находится предприятие Где находится предприятие
+                    </a>
+                  </span>
+                  <span class="footer-top__column-description">с 9:00 до 18:00 по будням</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content-bottom footer-bottom">
+            <a href=" ##" class="footer-top__column-policy description-hover">Политика конфиндециальности</a>
+            <span class="footer-bottom-descripter"><span>©</span> ЭСТЕТИКА</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-footer-windows">
+      <div id="popupBg1" class="popup__bg">
+        <div id="popup1" class="popup">
+          <div id="closePopupBtn1" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставьте заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с вами</div>
+          </div>
+          <form class="popup__form">
+            <!-- <form class="popup__form" action="send_popup.php" method="POST"> -->
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input name="name" type="text" class="popup__input" placeholder=" Имя">
+                <input name="phone" type="text" class="popup__input" placeholder="+7 (999) 999-99-99">
+                <textarea name="comment" class="popup__textarea" placeholder="Комментарий:"></textarea>
+              </div>
+              <div class="popup__inputs-bottom">
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a href="">персональных даннных</a></p>
+                </div>
+                <div class="popup__box-btn">
+                  <button class="hero-btn form-main-btn "><span class="text-btn">Заказать звонок</span>
+                    <div class="btn-svg-box">
+                      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="popupBg2" class="popup__bg">
+        <div id="popup2" class="popup">
+          <div id="closePopupBtn2" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставьте заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с вами</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input name="name" type="text" class="popup__input" placeholder="Имя">
+                <input name="phone" type="text" class="popup__input" placeholder="Телефон">
+                <textarea name="comment" class="popup__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="popup__inputs-bottom">
+                <div class="policy-checkbox-box">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" name="policy">
+                    <span class="custom-checkbox"></span>
+                  </label>
+                  <p>Соглашаюсь с обработкой <a href="">персональных даннных</a></p>
+                </div>
+                <div class="popup__box-btn">
+                  <button type="submit" class="hero-btn form-main-btn open-popup"><span class="text-btn">Заказать звонок</span>
+                    <div class="btn-svg-box">
+                      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.875 12.3745V0.999514C15.875 0.767449 15.7828 0.544888 15.6187 0.380795C15.4546 0.216701 15.2321 0.124514 15 0.124514H3.625C3.39293 0.124514 3.17037 0.216701 3.00628 0.380795C2.84219 0.544888 2.75 0.767449 2.75 0.999514C2.75 1.23158 2.84219 1.45414 3.00628 1.61823C3.17037 1.78233 3.39293 1.87451 3.625 1.87451H12.888L0.380936 14.3805C0.21675 14.5446 0.124512 14.7673 0.124512 14.9995C0.124512 15.2317 0.21675 15.4544 0.380936 15.6186C0.545121 15.7828 0.767805 15.875 0.999998 15.875C1.23219 15.875 1.45488 15.7828 1.61906 15.6186L14.125 3.11155V12.3745C14.125 12.6066 14.2172 12.8291 14.3813 12.9932C14.5454 13.1573 14.7679 13.2495 15 13.2495C15.2321 13.2495 15.4546 13.1573 15.6187 12.9932C15.7828 12.8291 15.875 12.6066 15.875 12.3745Z" />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div id="popupBg4" class="popup__bg">
+        <div id="popup4" class="popup">
+          <div id="closePopupBtn4" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">10 из 10!</div>
+            <div class="popup__text">Скидка 10% на первые 10 поездок</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input type="text" class="popup__input" placeholder="Имя">
+                <input type="text" class="popup__input" placeholder="Телефон">
+                <input type="text" class="popup__input" placeholder="Название компании">
+                <input type="text" class="popup__input" placeholder="Почта">
+                <textarea class="popup__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+              <div class="popup__inputs-bottom popup__inputs-bottom_reverses">
+                <div class="popup__inputs-bottom-text_reverse">
+                  <p class="popup__inputs-link">Скидка действует только по тарифу БИЗНЕС.</p>
+                  <p class="popup__inputs-link">Время работы нашего офиса с 09:00 до 18:00 в будни</p>
+                  <p class="popup__inputs-link">Нажимая на кнопку, вы соглашаетесь с условиями <a class="policy-color" href="https://rlm24.ru/privacy-policy/">политики конфиденциальности</a>
+                  </p>
+                </div>
+
+                <div class="popup__box-btn">
+                  <button class="popup__btn btn btn_transparent">Получить скидку</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> -->
+
+    </div>
+
+    <div class="cookie-box">
+      <div class="cookie-top">
+        <p class="cookie-text">
+          Куки файлы (или cookies) - это небольшие текстовые файлы, которые сайты сохраняют на устройстве пользователя (например,
+          компьютере или смартфоне) для хранения различной информации о посещениях и предпочтениях пользователя.
+          Они помогают сайтам запоминать информацию о вас, чтобы вам было удобнее пользоваться сайтом в дальнейшем, например.
+        </p>
+      </div>
+      <div class="cookie-bottom">
+        <button class="cookie-btn cookie-btn-no">Отклонить</button>
+        <button class="cookie-btn cookie-btn-ok ">Принять</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

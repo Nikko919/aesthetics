@@ -1,0 +1,66 @@
+/* Сброс стилий и базовые фаилы */
+@import url(/css/basic/reset.css);
+@import url(/css/basic/variables.css);
+@import url(/css/basic/common.css);
+/* Подключение файлов  компанентов */
+@import url(/css/components/buttons.css);
+@import url(/css/components/card.css);
+@import url(/css/components/swiper-bundle.css);
+@import url(/css/components/popup.css);
+@import url(/css/components/burger.css);
+@import url(/css/components/catalog-popup.css);
+@import url(/css/components/cookie.css);
+/* Секции сайта */
+@import url(/css/header/header.css);
+
+@import url(/css/sections/hero.css);
+@import url(/css/sections/newitems.css);
+@import url(/css/sections/stock.css);
+@import url(/css/sections/interior.css);
+@import url(/css/sections/about.css);
+@import url(/css/sections/main-form.css);
+@import url(/css/sections/catalog/bread-crumbs.css);
+@import url(/css/sections/catalog/filter.css);
+@import url(/css/sections/catalog/catalog.css);
+@import url(/css/sections/contacts/contacts.css);
+@import url(/css/sections/404.css);
+@import url(/css/footer/footer.css);
+
+
+
+
+/* Подключение шрифтов  */
+
+@font-face {
+  font-family: GeisM;
+  src: url(../fonts/Geist-Medium.woff2);
+}
+
+@font-face {
+  font-family: GeisR;
+  src: url(../fonts/Geist-Regular.woff2);
+}
+
+@font-face {
+  font-family: lighthaus;
+  src: url(../fonts/Lighthaus.woff2);
+}
+
+
+body {
+  background-color: var(--body-bg);
+  user-select: none;
+  /* Стандартное свойство */
+  -webkit-user-select: none;
+  /* Chrome, Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+}
+
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

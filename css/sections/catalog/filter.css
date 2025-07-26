@@ -1,0 +1,186 @@
+.catalog-filter-box {
+  margin-bottom: 25px;
+}
+
+.catalog-filter-btn {
+  width: 100%;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+  border: 1px solid var(--color-title);
+
+}
+
+.catalog-filter-btn>span {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--color-title);
+}
+
+.catalog-dropdown-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.catalog-dropdown-item-box>span {
+  font-family: var(--GeisM);
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--color-title);
+}
+
+
+.catalog-dropdown-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 10px;
+
+}
+
+.catalog-dropdown-menu-item-link {
+  cursor: pointer;
+}
+
+.catalog-dropdown-menu-item-link>div {
+  font-family: var(--GeisR);
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-text);
+  text-wrap: wrap;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+
+/* --- Dropdown open/close --- */
+.catalog-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  will-change: max-height, opacity;
+}
+
+.catalog-dropdown.open {
+  max-height: 2000px;
+  /* увеличено для больших меню */
+  opacity: 1;
+}
+
+
+/* --- Аккордеон для пунктов --- */
+.catalog-dropdown-item .catalog-dropdown-menu-item {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.catalog-dropdown-item.active .catalog-dropdown-menu-item {
+  max-height: 500px;
+  /* Достаточно большое значение */
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+}
+
+/* Сдвиг нижестоящих пунктов реализуется за счет max-height и transition */
+
+/* Стили для стрелки (можно добавить анимацию поворота) */
+.catalog-dropdown-item-box svg {
+  transition: transform 0.3s;
+}
+
+.catalog-dropdown-item.active .catalog-dropdown-item-box svg {
+  transform: rotate(180deg);
+}
+
+
+/* Мобильная версия: кнопка видна, меню скрыто по умолчанию */
+.catalog-filter-btn {
+  display: flex;
+}
+
+@media (max-width: 1199px) {
+  .catalog-filter-box {
+    position: relative;
+    z-index: 10;
+  }
+
+  .catalog-dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 8px;
+    z-index: 100;
+  }
+}
+
+@media (min-width:1200px) {
+  .catalog-filter-btn {
+    display: none !important;
+  }
+
+  .catalog-dropdown {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    transition: none !important;
+  }
+
+  .catalog-filter-box {
+    max-width: 236px;
+    margin-bottom: 0;
+  }
+
+  .catalog-filter-btn {
+    width: auto;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .catalog-filter-btn>span {
+    text-align: left;
+  }
+
+  .catalog-dropdown-menu-item {
+    gap: 10px;
+  }
+
+  .catalog-dropdown-menu-item-link>div {
+    font-size: 16px;
+  }
+
+  .catalog-dropdown {
+    position: static !important;
+    box-shadow: none !important;
+    background: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media (hover:hover) {
+
+  .catalog-dropdown-menu-item-link:hover>div {
+
+    color: var(--color-title);
+  }
+
+
+}
